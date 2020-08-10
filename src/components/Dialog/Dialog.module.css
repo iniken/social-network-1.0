@@ -2,8 +2,12 @@
     display: grid;
     grid-template-columns:  2fr 10fr;
     margin: 20px;
-
 }
+
+.dialogs  a {
+    text-decoration: none;
+}
+
 
 .dialogsItem .dialog {
 
@@ -11,6 +15,7 @@
 
 .dialogsItem .active {
     color: gold;
+
 }
 
 .messages {

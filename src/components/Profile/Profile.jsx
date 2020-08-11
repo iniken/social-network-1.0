@@ -1,13 +1,14 @@
 import React from 'react';
 import s from "./Profile.module.css"
 import MyPosts from "./MyPosts/MyPosts";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 const Profile = () => {
     return (
         <div>
-            <img src="https://www.tropicbreeze.co.uk/blog/wp-content/uploads/2017/08/Nisbet-Plantation-1200-500.jpg"/>
-            <div>Ava + description</div>
+           <ProfileInfo />
            <MyPosts />
+
         </div>
     )
 }

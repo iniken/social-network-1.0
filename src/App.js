@@ -15,6 +15,7 @@ const App = () => {
             <div className="app-wrapper">
                 <Header/>
                 <Navbar/>
+
                 <div className="app-wrapper-content">
                     <Route exact path='/dialogs'  component={Dialog}/>
                     <Route exact path='/profile'  component={Profile}/>
@@ -22,6 +23,7 @@ const App = () => {
                     <Route exact path='/music'  component={Music}/>
                     <Route exact path='/settings'  component={Settings}/>
                 </div>
+
             </div>
         </BrowserRouter>
     );

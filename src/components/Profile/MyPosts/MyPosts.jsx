@@ -10,6 +10,10 @@ let postsData = [
     {message: "how are you?", likesCount: "73"}
 ]
 
+let postElements = postsData.map( postMap =>
+    <Post mes={postMap.message} like={postMap.likesCount}/>
+)
+
 const MyPosts = (props) => {
 
     return (
@@ -24,11 +28,7 @@ const MyPosts = (props) => {
                 </div>
             </div>
             <div className={s.posts}>
-                <Post mes={postsData[0].message} like={postsData[0].likesCount}/>
-                <Post mes={postsData[1].message} like={postsData[1].likesCount}/>
-                <Post mes={postsData[2].message} like={postsData[2].likesCount}/>
-                <Post mes={postsData[3].message} like={postsData[3].likesCount}/>
-                <Post mes={postsData[4].message} like={postsData[4].likesCount}/>
+                {postElements}
             </div>
         </div>
     )

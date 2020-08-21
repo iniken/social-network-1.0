@@ -12,6 +12,7 @@ const MyPosts = (props) => {
     let AddPost = () => {
         let text = newPostElement.current.value
      props.addPost(text);
+        newPostElement.current.value=" "; //обнуление строчки после ввода текста!!!!!!
     }
     return (
         <div className={s.myPostsBlock}>

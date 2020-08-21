@@ -1,4 +1,3 @@
-
 let stateData = {
     profilePage: {
         postsData: [
@@ -10,7 +9,7 @@ let stateData = {
         ]
     },
     dialogsPage: {
-        dialogsData : [
+        dialogsData: [
             {id: "1", name: "Dimych"},
             {id: "2", name: "Andrey"},
             {id: "3", name: "Sveta"},
@@ -18,7 +17,7 @@ let stateData = {
             {id: "5", name: "Viktor"},
             {id: "6", name: "Valera"}
         ],
-        messagesData : [
+        messagesData: [
             {id: "1", message: "Hi"},
             {id: "2", message: "How is you it-kamasutra?"},
             {id: "3", message: "How are you?"},
@@ -28,5 +27,15 @@ let stateData = {
         ]
     }
 };
+
+export let addPost = (postMessage) => {
+    let newPost = {
+        id: 5,
+        message: postMessage,
+        likesCount: 0
+    };
+
+    stateData.profilePage.postsData.push(newPost);
+}
 
 export default stateData;
